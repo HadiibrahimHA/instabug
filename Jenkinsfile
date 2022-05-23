@@ -10,11 +10,14 @@ pipeline {
           steps{
             script{
             try {
-            echo "Build Docker Image ...."
-            sh 'docker build -t ${IMAGE} .'
+              echo "Build Docker Image ...."
+              sh 'docker build -t ${IMAGE} .'
+              echo "Send Successful  Massage"
+              mail to: "${EMAIL}",subject: "GOViolin Pipeline Successful Build",body: "Docker Image has been built successfully"
             }catch(all){
-            echo "Faild"
-            }
+              echo "Send Faild Massage"
+              mail to: "${EMAIL}",subject: "GOViolin Pipeline Successful Build",body: "Docker Image Faild to built"
+              }
             }
           }      
     }
@@ -31,12 +34,6 @@ pipeline {
          
   
   }
-  post{
-        always{
-          mail to: "${EMAIL}",
-            subject: "Test Email",
-            body: "Test"
-        }
-    }
+  
 
 }
