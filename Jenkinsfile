@@ -3,6 +3,7 @@ pipeline {
   environment
     {
         IMAGE = 'walednegm/gov:1.0'
+        EMAIL = 'walednegm4444@gmail.com'
     }
   stages{
     stage("Build Docker Image"){
@@ -19,6 +20,13 @@ pipeline {
               sh "docker push ${IMAGE}"
             }
           }      
+    }
+    post{
+        always{
+          mail to: "${EMAIL}",
+            subject: "Test Email",
+            body: "Test"
+        }
     }
          
   
