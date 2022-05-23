@@ -8,8 +8,12 @@ pipeline {
   stages{
     stage("Build Docker Image"){
           steps{
+            try{
             echo "Build Docker Image ...."
             sh 'docker build -t ${IMAGE} .'
+            }catch(all){
+            
+            }
           }      
     }
     stage("Push Image To DockerHub"){
