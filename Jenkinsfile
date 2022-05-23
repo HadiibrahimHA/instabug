@@ -21,15 +21,16 @@ pipeline {
             }
           }      
     }
-    post{
+    
+         
+  
+  }
+  post{
         always{
           mail to: "${EMAIL}",
             subject: "Test Email",
             body: "Test"
         }
     }
-         
-  
-  }
 
 }
