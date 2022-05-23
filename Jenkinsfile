@@ -36,13 +36,17 @@ pipeline {
               echo "Send Faild Push Massage"
               mail to: "${EMAIL}",subject: "GOViolin Pipeline Successful Build",body: "Docker Image Faild to push to Dockerhub"
             }
-              
           }      
     }
-    
-         
-  
   }
+    stage("Deploy Using Kubernetes and Minikube"){
+          steps{
+            script{
+            sh "kubectl apply -f kube_deploy.yml"
+          }      
+    }
+  }
+    
   
 
 }
