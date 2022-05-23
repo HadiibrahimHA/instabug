@@ -8,11 +8,13 @@ pipeline {
   stages{
     stage("Build Docker Image"){
           steps{
-            try{
+            script{
+            try {
             echo "Build Docker Image ...."
             sh 'docker build -t ${IMAGE} .'
             }catch(all){
-            
+            echo "Faild"
+            }
             }
           }      
     }
