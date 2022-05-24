@@ -2,7 +2,7 @@
 
 
 
-## Write Dockerfile
+## Writing Dockerfile
 ```
 FROM golang:1.16-alpine
 WORKDIR /GoViolin_app
@@ -13,16 +13,17 @@ EXPOSE 8080
 CMD [ "/goviolin_app" ]
 ```
 
-## Build The DockerImage
+## Build The DockerImage Locally
 ```
 docker build -t walednegm/gov:1.0 .
 ```
 ![alt text](https://github.com/waleednegm/GoViolin_Instabug_Task/blob/main/assets/Screenshot%20from%202022-05-23%2019-26-51.png)
-- Run The Container
+## Run The Container
+- using docker run
 ```
 docker run -p 8080:8080 walednegm/gov:1.0
 ```
-- You can also run the container using docker-compose
+- using docker-compose
 ```
 docker-compose -f compose.yml up
 ```
