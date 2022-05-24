@@ -1,6 +1,14 @@
 # GoViolin_Instabug_Task
 
-
+##### Table of Contents
+1. [Writing Dockerfile](#writing-dockerfile)
+2. [Build The DockerImage Locally](#build-the-dockerimage-locally)
+3. [Run The Container](#run-the-container)
+4. [Access The Website](#access-the-website-using)
+5. [Creating Pipeline Job](#creating-pipeline-job)
+6. [Creating DockerHub Repository](#creating-dockerhub-repository)
+7. [Creating Jenkinsfile And Test It](#creating-jenkinsfile-and-test-it)
+8. [Reporting Using Email Notification](#reporting-using-email-notification)
 
 ## Writing Dockerfile
 ```
