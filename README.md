@@ -8,6 +8,9 @@ docker build -t walednegm/gov:1.0 .
 ### Access The Website Using 
 http://127.0.0.1:8080/
 
-
+you can also run the container using docker-compose
+```
+docker-compose -f compose.yml up
+```
 
 
