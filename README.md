@@ -40,7 +40,7 @@ http://127.0.0.1:8080/
 
 
 ## Creating Jenkinsfile And Test It
-![alt text](https://github.com/waleednegm/GoViolin_Instabug_Task/blob/main/assets/Screenshot%20from%202022-05-23%2019-55-33.png)
+![alt text](https://github.com/waleednegm/GoViolin_Instabug_Task/blob/main/assets/Screenshot%20from%202022-05-23%2019-55-33-1.png)
 ![alt text](https://github.com/waleednegm/GoViolin_Instabug_Task/blob/main/assets/Screenshot%20from%202022-05-23%2019-38-49.png)
 
 ## Reporting Using Email Notification
