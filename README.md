@@ -1,4 +1,4 @@
-# GoViolin_Instabug_Task
+# GoViolin_Pipeline
 
 ##### Table of Contents
 1. [Writing Dockerfile](#writing-dockerfile)
